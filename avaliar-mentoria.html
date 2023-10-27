@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliar Mentoria</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aval-mentoria.css">
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Avalie a sua mentoria</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="./img/note-balloon.svg" alt="Balão de pensamento na cor salmão com estrelas de avaliação.">
+
+            <div class="title-info">
+                <h2>Informações pessoais</h2>                    
+            </div>
+        </header>
+
+        
+
+        <form>
+            <fieldset>
+                <div class="col-2">
+                    <div class="input-wrapper">
+                        <label for="aval-name">Nome</label>
+                        <input type="text" name="aval-name" id="aval-name">
+                    </div><!--NOME-->
+
+                    <div class="input-wrapper">
+                        <label for="aval-surname">Sobrenome</label>
+                        <input type="text" name="aval-surname" id="aval-surname">
+                    </div><!--SOBRENOME-->
+                </div><!--DIV COL-2-->
+
+                <div class="input-wrapper">
+                    <label for="aval-email">Email <span>(digite um email válido)</span></label>
+                    <input type="email" name="aval-email" id="aval-email">
+                </div><!--EMAIL-->
+
+                
+            </fieldset><!--FIELDSET 01-->
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações do Mentor</legend>
+                    
+                    <div class="input-wrapper">
+                        <label for="sel-mentor">Selecione quem foi o seu mentor</label>
+                        <input type="text" name="sel-mentor" id="sel-mentor">
+                    </div><!--MENTOR-->
+
+                    <div class="input-wrapper">
+                        <label for="sel-mentor">Feedback sobre o mentor</label>
+                        <textarea id="feedback-mentor"></textarea>
+                    </div><!--FEEDBACK MENTOR-->
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="aval-check" id="aval-check">
+                        <label for="aval-check">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div><!--CHECKBOX-->
+
+                </div><!--FIELDSET-WRAPPER-->
+            </fieldset><!--FIELDSET 02-->
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Agendando Próxima Mentoria</legend>              
+
+                    <div class="col-3">
+                      <div class="input-wrapper">
+                         <label for="ag-date">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" name="ag-date" id="ag-date">
+                        </div><!--DATA-->
+
+                        <div class="input-wrapper">
+                            <label for="ag-before">Das</label>
+                            <input type="time" name="ag-before" id="ag-before">
+                        </div><!--DAS-->
+
+                        <div class="input-wrapper">
+                            <label for="ag-end">Até</label>
+                            <input type="time" name="ag-end" id="ag-end">
+                        </div><!--ATÉ-->                       
+                    </div><!--COL-3-->
+
+                    <input class="button" type="submit" value="Salvar">
+                </div><!--FIELDSET-WRAPPER-->
+                
+            </fieldset>
+
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
